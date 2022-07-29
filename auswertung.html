@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bewertung</title>
+    <script src="index.js"></script>
+    
+        <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+<link rel ="icon" type="image/x-icon" href="images/browser_header.png" />
+
+</head>
+<body class="body" onload="auswertung_anfordern()">
+    <style>
+        .body {
+            background-color: black;
+
+        }
+       .font {
+        font-family: 'Roboto Mono', monospace;
+        color: white;
+       }
+       .points_anzeige {
+        color: white;
+        position: absolute;
+        left: 450px;
+    
+    
+    
+    }
+
+
+    .points {
+        color: white;
+        top: 150px;
+        position: absolute;
+    }
+    .heading3 {
+        position: absolute;
+        left: 500px;
+        top: 125px;
+    }
+
+    .div-container-display {
+        left: 500px; 
+        top: 200px;
+        border-radius: 2px;
+    }
+    .heading5 {
+        position: absolute;
+        left: 500px;
+        top: 250px;
+    }
+
+
+    .points_display_class {
+        position: absolute;
+        left: 500px;
+        top: 500px;
+    }
+        </style>
+
+
+<h1 class="font points_anzeige heading1">Bewertung</h1>
+<h3 class="font heading3">Deine Kenntnise des Informatik Themas Netzwerke und Codierungen werden grob als </h3>
+<h3 class="font heading5">bezeichnet</h3>
+<div class="points font div-container-display" id="points_anzeige">
+
+</div>
+
+<div id="points_display" class="points_display_class font">
+<h3 class="font">Punkte :
+</h3>
+
+</div>
+
+<button class="mdc-button mdc-button--outlined weiter"  onclick="index_back()">
+    <span class="mdc-button__ripple"></span>
+    <span class="mdc-button__label weiter_text">zurück zum Anfang
+    </span>
+  </button>
+
+</body>
+</html>
