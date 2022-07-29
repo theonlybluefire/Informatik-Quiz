@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frage 8</title>
+
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+<script src="index.js"></script>
+<link rel ="icon" type="image/x-icon" href="images/browser_header.png" >
+
+</head>
+<body class="body">
+<style>
+.body {
+    background-color: black;
+
+}
+.heading2 {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    left: 1040px;
+    position: absolute;
+    top: 80px;
+    transition: 1s;
+}
+.heading1 {
+    top: 15px;
+    font-family: 'Roboto Mono', monospace;
+   color: white;
+   position: absolute;
+   left: 700px;
+   transition: 0.5s;
+}
+.heading2:hover {
+    color: rgb(57, 190, 30);
+    border-radius: 100px;
+    left: 1050px;
+    transition: 1s;
+}
+.heading1:hover {
+    transition: 0.5s;
+    top: 25px;
+    
+}
+.button1  {
+    left: 200px;
+    top: 200px;
+    position: absolute;
+}
+.button2 {
+    left: 200px;
+    top: 270px;
+    position: absolute; 
+}
+
+.button3 {
+    left: 450px;
+    top: 200px;
+    position: absolute; 
+}
+
+.button4 {
+    left: 450px;
+    top: 270px;
+    position: absolute; 
+}
+
+.mdc-fab:hover {
+    background-color: rgb(116, 117, 116);
+    
+    transition: 0.5s;
+}
+.mdc-fab {
+    transition: 0.5s;
+    background-color: rgb(57, 190, 30);
+}
+.weiter {
+    left: 900px;
+    top: 500px;
+   background-color: black;
+   transition: 1s;
+}
+.weiter_text {
+    color: white;
+    transition: 1s;
+    
+}
+
+.weiter:hover {
+    background-color: rgb(57, 190, 30);
+    transition: 1s;
+}
+.weiter_text:hover {
+    color: black;
+    transition: 1s;
+}
+
+</style>
+
+<h1 class="heading1">Frage 8</h1>
+<h1 class="heading2">Welches der Antworten entspricht der Zahl 25 im Binärsystem</h1>
+<button class="mdc-fab mdc-fab--extended button1" id="button1_quiz1 buttons" onclick="check_(false)">
+    <div class="mdc-fab__ripple"></div>
+    <span class="material-icons mdc-fab__icon"></span>
+    <span class="mdc-fab__label">010010000101</span>
+  </button>
+  
+
+  <button class="mdc-fab mdc-fab--extended button2" id="button2_quiz1 buttons" onclick="check_(false)">
+    <div class="mdc-fab__ripple"></div>
+    <span class="material-icons mdc-fab__icon"></span>
+    <span class="mdc-fab__label">01001</span>
+  </button>
+  <button class="mdc-fab mdc-fab--extended button3" id="button3_quiz1 buttons" onclick="check_(false)">
+    <div class="mdc-fab__ripple"></div>
+    <span class="material-icons mdc-fab__icon"></span>
+    <span class="mdc-fab__label">00110</span>
+  </button>
+  <button class="mdc-fab mdc-fab--extended button4" id="button4_quiz1 buttons" onclick="check_(true)">
+    <div class="mdc-fab__ripple"></div>
+    <span class="material-icons mdc-fab__icon"></span>
+    <span class="mdc-fab__label">11001</span>
+  </button>
+
+
+  <button class="mdc-button mdc-button--outlined weiter"  onclick="weiter_('auswertung.html')">
+    <span class="mdc-button__ripple"></span>
+    <span class="mdc-button__label weiter_text">weiter</span>
+  </button>
+
+
+</body>
+</html>
