@@ -1,5 +1,5 @@
 # Quiz App 
-##ONLY GERMAN 
+## ONLY GERMAN 
 ```
 To set up :
 Öffne die Projekt Datei, extrahiere diese und füge sie zu einem extra Ordner hinzu
